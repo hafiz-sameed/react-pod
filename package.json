@@ -1,0 +1,13 @@
+{
+  "name": "mixer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Mixer",
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-native": "^0.67.4"
+  }
+}
