@@ -44,7 +44,7 @@ Pod::Spec.new do |s|
   s.preserve_paths         = "package.json", "LICENSE", "LICENSE-docs"
   s.cocoapods_version      = ">= 1.10.1"
   s.subspec "Core" do |ss|
-    ss.dependency             "yoga", "#{package["version"]}.React"
+    ss.dependency             "Yoga", "#{package["version"]}.React"
     ss.source_files         = "React/**/*.{c,h,m,mm,S,cpp}"
     ss.exclude_files        = "**/__tests__/*",
                               "IntegrationTests/*",
