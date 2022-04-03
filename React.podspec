@@ -69,14 +69,14 @@ Pod::Spec.new do |s|
   end
 
   s.subspec "BatchedBridge" do |ss|
-    ss.dependency             "React-Core"
+    ss.dependency             "React/Core"
     ss.dependency             "React/cxxreact_legacy"
     ss.source_files         = "React/Base/RCTBatchedBridge.mm", "React/Executors/*"
   end
 
   s.subspec "CxxBridge" do |ss|
     ss.dependency             "Folly", "2016.09.26.00"
-    ss.dependency             "React-Core"
+    ss.dependency             "React/Core"
     ss.dependency             "React/cxxreact"
     ss.compiler_flags       = folly_compiler_flags
     ss.private_header_files = "React/Cxx*/*.h"
@@ -84,14 +84,14 @@ Pod::Spec.new do |s|
   end
 
   s.subspec "DevSupport" do |ss|
-    ss.dependency             "React-Core"
+    ss.dependency             "React/Core"
     ss.dependency             "React/RCTWebSocket"
     ss.source_files         = "React/DevSupport/*",
                               "React/Inspector/*"
   end
 
   s.subspec "tvOS" do |ss|
-    ss.dependency             "React-Core"
+    ss.dependency             "React/Core"
     ss.source_files         = "React/**/RCTTV*.{h, m}"
   end
 
@@ -151,71 +151,71 @@ Pod::Spec.new do |s|
   end
 
   s.subspec "ART" do |ss|
-    ss.dependency             "React-Core"
+    ss.dependency             "React/Core"
     ss.source_files         = "Libraries/ART/**/*.{h,m}"
   end
 
   s.subspec "RCTActionSheet" do |ss|
-    ss.dependency             "React-Core"
+    ss.dependency             "React/Core"
     ss.source_files         = "Libraries/ActionSheetIOS/*.{h,m}"
   end
 
   s.subspec "RCTAnimation" do |ss|
-    ss.dependency             "React-Core"
+    ss.dependency             "React/Core"
     ss.source_files         = "Libraries/NativeAnimation/{Drivers/*,Nodes/*,*}.{h,m}"
     ss.header_dir           = "RCTAnimation"
   end
 
   s.subspec "RCTBlob" do |ss|
-    ss.dependency             "React-Core"
+    ss.dependency             "React/Core"
     ss.source_files         = "Libraries/Blob/*.{h,m}"
     ss.preserve_paths       = "Libraries/Blob/*.js"
   end
 
   s.subspec "RCTCameraRoll" do |ss|
-    ss.dependency             "React-Core"
+    ss.dependency             "React/Core"
     ss.dependency             'React/RCTImage'
     ss.source_files         = "Libraries/CameraRoll/*.{h,m}"
   end
 
   s.subspec "RCTGeolocation" do |ss|
-    ss.dependency             "React-Core"
+    ss.dependency             "React/Core"
     ss.source_files         = "Libraries/Geolocation/*.{h,m}"
   end
 
   s.subspec "RCTImage" do |ss|
-    ss.dependency             "React-Core"
+    ss.dependency             "React/Core"
     ss.dependency             "React/RCTNetwork"
     ss.source_files         = "Libraries/Image/*.{h,m}"
   end
 
   s.subspec "RCTNetwork" do |ss|
-    ss.dependency             "React-Core"
+    ss.dependency             "React/Core"
     ss.source_files         = "Libraries/Network/*.{h,m,mm}"
   end
 
   s.subspec "RCTPushNotification" do |ss|
-    ss.dependency             "React-Core"
+    ss.dependency             "React/Core"
     ss.source_files         = "Libraries/PushNotificationIOS/*.{h,m}"
   end
 
   s.subspec "RCTSettings" do |ss|
-    ss.dependency             "React-Core"
+    ss.dependency             "React/Core"
     ss.source_files         = "Libraries/Settings/*.{h,m}"
   end
 
   s.subspec "RCTText" do |ss|
-    ss.dependency             "React-Core"
+    ss.dependency             "React/Core"
     ss.source_files         = "Libraries/Text/**/*.{h,m}"
   end
 
   s.subspec "RCTVibration" do |ss|
-    ss.dependency             "React-Core"
+    ss.dependency             "React/Core"
     ss.source_files         = "Libraries/Vibration/*.{h,m}"
   end
 
   s.subspec "RCTWebSocket" do |ss|
-    ss.dependency             "React-Core"
+    ss.dependency             "React/Core"
     ss.dependency             "React/RCTBlob"
     ss.dependency             "React/fishhook"
     ss.source_files         = "Libraries/WebSocket/*.{h,m}"
@@ -227,18 +227,18 @@ Pod::Spec.new do |s|
   end
 
   s.subspec "RCTLinkingIOS" do |ss|
-    ss.dependency             "React-Core"
+    ss.dependency             "React/Core"
     ss.source_files         = "Libraries/LinkingIOS/*.{h,m}"
   end
 
   s.subspec "RCTTest" do |ss|
-    ss.dependency             "React-Core"
+    ss.dependency             "React/Core"
     ss.source_files         = "Libraries/RCTTest/**/*.{h,m}"
     ss.frameworks           = "XCTest"
   end
 
   s.subspec "_ignore_me_subspec_for_linting_" do |ss|
-    ss.dependency             "React-Core"
+    ss.dependency             "React/Core"
     ss.dependency             "React/CxxBridge"
   end
   # s.dependency "React-Core", version
